@@ -2,11 +2,14 @@
 Install and customize a linux system
 ## Antergos xfce
 ### Download and install the OS
-* install with default settings: check firefox, chromium, libreoffice, extrafonts, AUR
+* install with default settings
+* check xfce4
+* check firefox, chromium, libreoffice, extrafonts, AUR
+* update with `sudo pacman -Syu`
 
 ### pacman -S or PackageManager GUI
-* vim htop ncdu plank archlabs-plank-themes-git xfce4-whiskermenu-plugin
-* wps-office ttf-wps-fonts
+* `pacman -S vim htop ncdu plank archlabs-plank-themes-git xfce4-whiskermenu-plugin`
+* `pacman -S wps-office ttf-wps-fonts`
 
 ### Settings
 * window manager tweaks - compositor - uncheck:show shadows under dock windows
@@ -20,3 +23,6 @@ Install and customize a linux system
 
 ### plank - preferences
 * Appearance - Theme: Transpanel, Position: Left, IconSize: 28
+
+### random tips
+* Pacman: https://www.digitalocean.com/community/tutorials/how-to-use-arch-linux-package-management
