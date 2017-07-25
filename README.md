@@ -8,7 +8,7 @@ Install and customize a linux system
 * update with `sudo pacman -Syu`
 
 ### Basic tweak
-* `pacman -S vim htop ncdu xfce4-whiskermenu-plugin`
+* `pacman -S vim htop ncdu xfce4-whiskermenu-plugin adobe-source-han-sans-cn-fonts`
 * Settings - keyboard - Application shortcuts - Add: xfce4-popup-wiskermenu; Key: Super+space
 * panel - preferences - add: whisker-menu, remove:plication-menu
 * remove the panel2 (docker)
@@ -26,3 +26,4 @@ Install and customize a linux system
 ### random tips
 * Pacman: https://www.digitalocean.com/community/tutorials/how-to-use-arch-linux-package-management
  * Clean the package cache: `pacman -Scc`
+* Extra fonts: https://wiki.archlinux.org/index.php/fonts#Chinese
