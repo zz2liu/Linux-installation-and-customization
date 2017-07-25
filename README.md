@@ -4,26 +4,25 @@ Install and customize a linux system
 ### Download and install the OS
 * install with default settings
 * check xfce4
-* check firefox, chromium, libreoffice, extrafonts, AUR
+* check chromium, libreoffice, AUR
 * update with `sudo pacman -Syu`
 
-### pacman -S or PackageManager GUI
-* `pacman -S vim htop ncdu plank archlabs-plank-themes-git xfce4-whiskermenu-plugin`
-* Redundant: `pacman -S wps-office ttf-wps-fonts`
-
-### Settings
-* window manager - Button layout: remove the arrow
-* Redundant: keyboard - Application shortcuts - Add: xfce4-popup-wiskermenu; Key: Super+space
-* Redundant plank:
-  * window manager tweaks - compositor - uncheck:show shadows under dock windows
-  * sessions and startup - Application Autostart - Add: plank
-
-### panel - preferences
+### Basic tweak
+* `pacman -S vim htop ncdu xfce4-whiskermenu-plugin`
+* Settings - keyboard - Application shortcuts - Add: xfce4-popup-wiskermenu; Key: Super+space
+* panel - preferences - add: whisker-menu, remove:plication-menu
 * remove the panel2 (docker)
-* Redundant: Add Whisker-menu
 
-### plank - preferences
-* Appearance - Theme: Transpanel, Position: Left, IconSize: 28
+### More polished (abundant):
+#### plank - preferences
+* `pacman -S plank archlabs-plank-themes-git`
+* window manager tweaks - compositor - uncheck:show shadows under dock windows
+* window manager - Button layout: remove the arrow
+* sessions and startup - Application Autostart - Add: plank
+* Plank - Appearance - Theme: Transpanel, Position: Left, IconSize: 28
+#### WPS office, firefox, shutter
+* `pacman -S wps-office ttf-wps-fonts firefox shutter perl-goo-canvas`
 
 ### random tips
 * Pacman: https://www.digitalocean.com/community/tutorials/how-to-use-arch-linux-package-management
+ * Clean the package cache: `pacman -Scc`
